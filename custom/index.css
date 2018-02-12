@@ -1,0 +1,52 @@
+/* side-bar-style */
+.sidebar_menu{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #2C3E50;
+}
+
+/* Main-Content */
+.main_content{
+    width: 100%;
+    padding: 10px;
+}
+
+/* width change of side-nav */
+
+.main-screen-full{
+    width: 250px !important;
+}
+
+.content_side_padding{
+    padding-left: 250px !important;
+}
+
+/* sidenav Style */
+.bar-nav{
+    padding: 0;
+    list-style: none;
+}
+
+.bar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.bar-nav li a{
+    display: block;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.bar-nav li a:hover{
+    background:lightblue;
+    color: black;
+}
+
+/* top notification bar */
+#notification-content{
+    background: rgb(22, 32, 41);
+    height: 40px;
+}
