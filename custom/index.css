@@ -24,6 +24,25 @@
 }
 
 /* sidenav Style */
+
+.profile-display{
+    height: 30%;
+    text-align: center;
+}
+
+#image_profile{
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+.username, .location{
+    color: #FFFFFF;
+}
+
+#horizontal-bar{
+    border: 1px solid white;
+}
+
 .bar-nav{
     padding: 0;
     list-style: none;
@@ -49,4 +68,10 @@
 #notification-content{
     background: rgb(22, 32, 41);
     height: 40px;
+}
+
+
+/* main-content-area */
+#upper_main{
+    background: rgba(165, 166, 167, 0)
 }
