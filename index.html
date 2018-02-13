@@ -9,6 +9,7 @@
     <!-- general css frameworks -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- general frameworks js -->
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -34,24 +35,77 @@
             </div>
             <hr class="horizontal-bar">
                 <ul class="bar-nav">
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Shopping Card</a></li>
-                    <li><a href="#">Explore</a></li>
+                    <li><a href="#" id="account-content"><i class="fa fa-user-circle-o icon-style"></i>Account</a>
+                        <ul class="dropdrown-nav-account">
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="show-content"><i class="fa fa-server icon-style"></i>General Info</a>
+                        <ul class="dropdrown-nav">
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-eye icon-style"></i>Explore</a></li>
+                    <li><a href="#"><i class="fa fa-line-chart icon-style"></i>Statistics</a></li>
+                    <li><a href="#"><i class="fa fa-globe icon-style"></i>Maps</a></li>
                     <hr class="horizontal-bar">
                     <li><a href="#">Log Out</a></li>
                 </ul>
         </div>
 
 
-        <!-- main-content -->
          <!-- top notification bar -->
          <div class="container-fluid" id="notification-content">
          <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-2">
                         <button class="btn-toggle" id="side_bar_toggle">|||</button>
                     </div>
+                <div class="col-xs-10">
+                    <span id="user-settings"><i class="fa fa-gear topnav-icon"></i>
+                    </span>
+                    <div class="show_container_settings">
+                            <ul class="list-style-standard">
+                                    <li>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    Account        
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    Profile        
+                                                </div>
+                                            </div>
+                                    </li>
+                                </ul>
+                    </div>
+                    <span id="msg-show"><i class="fa fa-commenting-o topnav-icon"></i></span>
+                    <div class="show_container_msg">
+                        <ul class="list-style-standard">
+                            <li>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            Name        
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            Message        
+                                        </div>
+                                    </div>
+                                    <hr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- main-content -->
         <div class="main_content">
             <div class="container-fluid">
                 

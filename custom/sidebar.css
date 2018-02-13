@@ -3,7 +3,7 @@
     position: fixed;
     width: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     background: #2C3E50;
 }
 
@@ -64,3 +64,36 @@
     height: 40px;
 }
 
+/* dropdown nav */
+
+.dropdrown-nav{
+    display: none;
+    list-style: none;
+}
+
+.dropdrown-nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+.show-hidden-menu{
+    display: block !important;
+}
+
+.dropdrown-nav-account{
+    display: none;
+    list-style: none;
+}
+
+.dropdrown-nav-account li a{
+    text-decoration: none;
+    color:white;
+}
+
+/* general icon style */
+
+.icon-style{
+    font-size: 24px;
+    float: left;
+    padding-top: 7px;
+}

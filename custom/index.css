@@ -19,3 +19,65 @@
     border: 1px solid white;
     cursor: pointer;
 }
+
+.location{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.topnav-icon{
+    font-size: 24px;
+    padding-top: 7px;
+    padding-right: 5px;
+    float: right;
+    cursor: pointer;
+    color:white;
+}
+
+.topnav-icon:first-child{
+    padding-right: 15px;
+}
+
+/* user settings and messaging container style */
+
+.msg-container{
+    display: block !important;
+    width:250px;
+    height: 180px;
+    background: white;
+    position: absolute;
+    border: 1px solid black;
+    left: 73%;
+    top: 135%;
+    border-radius: 5px;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.settings-container{
+    display: block !important;
+    width:180px;
+    height: 180px;
+    background: white;
+    position: absolute;
+    border: 1px solid black;
+    left: 80%;
+    top: 135%;
+    border-radius: 5px;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.show_container_settings, .show_container_msg{
+    display: none;
+}
+
+.list-style-standard{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
