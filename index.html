@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Side Bar | Index</title>
+    <title>Admin Side Bar | Dashboard</title>
 
     <!-- general css frameworks -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,6 +42,7 @@
                             <li><a href="#">dropdown</a></li>
                         </ul>
                     </li>
+                    <li><a href="#" class="active"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
                     <li><a href="#" id="show-content"><i class="fa fa-server icon-style"></i>General Info</a>
                         <ul class="dropdrown-nav">
                             <li><a href="#">dropdown</a></li>
@@ -69,15 +70,25 @@
                     </span>
                     <div class="show_container_settings">
                             <ul class="list-style-standard">
-                                    <li>
-                                            <div class="row">
+                                    <li class="list-profile-class">
+                                            <div class="row account">
                                                 <div class="col-xs-12">
-                                                    Account        
+                                                        <img id="image_profile-user" src="http://via.placeholder.com/25x25" >
+                                                    Profile        
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                    </li>
+                                    <li class="list-profile-class">
+                                            <div class="row profile">
                                                 <div class="col-xs-12">
-                                                    Profile        
+                                                        <i class="fa fa-user-circle-o mini-icon-style"></i>Account        
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li class="list-profile-class">
+                                            <div class="row profile">
+                                                <div class="col-xs-12">
+                                                    Log Out        
                                                 </div>
                                             </div>
                                     </li>
@@ -86,19 +97,54 @@
                     <span id="msg-show"><i class="fa fa-commenting-o topnav-icon"></i></span>
                     <div class="show_container_msg">
                         <ul class="list-style-standard">
-                            <li>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            Name        
+                                <li class="list-items-chat-color">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Steve:        
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            Message        
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Hey,what's up for today?        
+                                            </div>
                                         </div>
-                                    </div>
-                                    <hr>
-                            </li>
+                                </li>
+                                <li class="list-items-chat">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                John Smith:        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Reminder for your business meeting at 12 am        
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-items-chat-color">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Carolina        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Post the Article on next Tuesday!        
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-items-chat">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Jonathan        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Great! Would then like discuss more about it!        
+                                            </div>
+                                        </div>
+                                </li>
                         </ul>
                     </div>
                 </div>

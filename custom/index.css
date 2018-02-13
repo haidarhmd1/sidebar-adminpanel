@@ -1,8 +1,8 @@
 
 /* Main-Content */
 .main_content{
+    padding-left: 250px;
     width: 100%;
-    padding: 10px;
 }
 
 
@@ -57,12 +57,12 @@
 
 .settings-container{
     display: block !important;
-    width:180px;
-    height: 180px;
+    width: 130px;
+    height: 160px;
     background: white;
     position: absolute;
     border: 1px solid black;
-    left: 80%;
+    left: 85%;
     top: 135%;
     border-radius: 5px;
     z-index: 1;
@@ -75,9 +75,64 @@
     display: none;
 }
 
+
+/* messaging and account settings styling */
+
 .list-style-standard{
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-items-chat-color{
+    background: blanchedalmond;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.list-items-chat{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.usernametxt{
+    font-size: 12px;
+}
+
+.msgtxt{
+    text-align: center;
+}
+
+.account{
+    padding: 10px 10px;
+}
+.profile{
+    padding: 10px 10px;
+}
+
+.mini-icon-style{
+    font-size: 15px;
+    float: left;
+    padding-top: 2px;
+    padding-left: 0px;
+}
+
+#image_profile-user{
+    padding: 0px;
+    float: left;
+    border-radius: 50%;
+}
+
+.list-profile-class{
+    cursor: pointer;
+}
+
+.list-profile-class:hover{
+    background: #000000;
+    color:white;
 }
