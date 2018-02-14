@@ -1,0 +1,71 @@
+#map {
+    height: 400px;
+    width: 100%;
+   }
+
+   table {
+    font-size: 12px;
+  }
+  #map {
+    width: 100%;
+  }
+
+  #autocomplete {
+    width: 100%;
+  }
+  #country {
+    width: 100%;
+  }
+  .placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+  }
+  .hotelIcon {
+    width: 24px;
+    height: 24px;
+  }
+  #resultsTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #results tr{
+    cursor: pointer;
+  }
+
+  #rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+  }
+  .iw_table_row {
+    height: 18px;
+  }
+  .iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+  }
+  .iw_table_icon {
+    text-align: right;
+  }
+
+
+  /* override the default margin property of bootstrap row */
+
+  .row{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .no-padding{
+    padding: 0px 0px 0px 0px;
+  }
+
+  #controls{
+    padding-bottom: 10px;
+  }
+
+  #locationField{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

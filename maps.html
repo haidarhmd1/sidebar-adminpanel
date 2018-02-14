@@ -15,17 +15,14 @@
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- plugins -->
-    <script src="plugins/Chart.js"></script>
-
     <!-- custom css -->
     <link rel="stylesheet" href="custom/index.css">
     <link rel="stylesheet" href="custom/sidebar.css">
+    <link rel="stylesheet" href="custom/maps.css">
 
     <!-- custom js -->
     <script src="custom/index.js"></script>
-    <script src="custom/chartCustom.js"></script>
-
+    <script src="custom/maps.js"></script>
 
 </head>
 <body>
@@ -47,7 +44,7 @@
                             <li><a href="#">dropdown</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html" class="active"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
+                    <li><a href="index.html"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
                     <li><a href="#" id="show-content"><i class="fa fa-server icon-style"></i>General Info</a>
                         <ul class="dropdrown-nav">
                             <li><a href="#">dropdown</a></li>
@@ -57,7 +54,7 @@
                     </li>
                     <li><a href="#"><i class="fa fa-eye icon-style"></i>Explore</a></li>
                     <li><a href="#"><i class="fa fa-line-chart icon-style"></i>Statistics</a></li>
-                    <li><a href="maps.html"><i class="fa fa-globe icon-style"></i>Maps</a></li>
+                    <li><a href="#" class="active"><i class="fa fa-globe icon-style"></i>Maps</a></li>
                     <hr class="horizontal-bar">
                     <li><a href="#">Log Out</a></li>
                 </ul>
@@ -163,34 +160,90 @@
                 <!-- upper-title-content -->
                 <div class="row">
                     <div class="col-xs-12 panel panel-head" id="upper_main">
-                        <h2>Main Content</h1>
+                        <h2>Google Maps</h1>
                     </div>
                 </div>
                 <!-- main-content-area -->
                 <div class="row">
+                    <div class="col-xs-2 panel panel-default no-padding">
+                        <div class="panel-body">
+                                <div id="findhotels">
+                                        Find hotels in:
+                                      </div>
+                                  
+                                      <div id="locationField">
+                                        <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
+                                      </div>
+                                  
+                                      <div id="controls">
+                                        <select id="country" class="form-control">
+                                          <option value="all">All</option>
+                                          <option value="au">Australia</option>
+                                          <option value="br">Brazil</option>
+                                          <option value="ca">Canada</option>
+                                          <option value="fr">France</option>
+                                          <option value="de">Germany</option>
+                                          <option value="mx">Mexico</option>
+                                          <option value="nz">New Zealand</option>
+                                          <option value="it">Italy</option>
+                                          <option value="za">South Africa</option>
+                                          <option value="es">Spain</option>
+                                          <option value="pt">Portugal</option>
+                                          <option value="us" selected>U.S.A.</option>
+                                          <option value="uk">United Kingdom</option>
+                                        </select>
+                                      </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
                         <!-- content goes here... -->
 
-                        <div class="col-xs-12 panel panel-body">
-                            <h3 class="text-center"> Welcome to your Dashboard</h3>
-                        </div> 
-
-                                <div class="col-xs-4 panel panel-body">
-                                    <canvas id="myChart"></canvas>
-                                </div>
-                                <div class="col-xs-4 panel panel-body">
-    
-                                </div>
-                                <div class="col-xs-4 panel panel-body">
-    
-                                </div>
-
+                        <div id="map"></div>
 
                         <!-- end content goes here... -->
+                    </div>
+                    <div class="col-xs-4 panel panel-default">
+                        <div class="panel-body">
+                            <div id="listing">
+                                <table id="resultsTable">
+                                  <tbody id="results"></tbody>
+                                </table>
+                                <div style="display: none">
+                                        <div id="info-content">
+                                          <table>
+                                            <tr id="iw-url-row" class="iw_table_row">
+                                              <td id="iw-icon" class="iw_table_icon"></td>
+                                              <td id="iw-url"></td>
+                                            </tr>
+                                            <tr id="iw-address-row" class="iw_table_row">
+                                              <td class="iw_attribute_name">Address:</td>
+                                              <td id="iw-address"></td>
+                                            </tr>
+                                            <tr id="iw-phone-row" class="iw_table_row">
+                                              <td class="iw_attribute_name">Telephone:</td>
+                                              <td id="iw-phone"></td>
+                                            </tr>
+                                            <tr id="iw-rating-row" class="iw_table_row">
+                                              <td class="iw_attribute_name">Rating:</td>
+                                              <td id="iw-rating"></td>
+                                            </tr>
+                                            <tr id="iw-website-row" class="iw_table_row">
+                                              <td class="iw_attribute_name">Website:</td>
+                                              <td id="iw-website"></td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                      </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-</body>
-</html>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBoHQ3wSPjV7rM6o0tCwOzIc90rfvWrVY&libraries=places&callback=initMap"
+        async defer></script>
+    </body>
+    </html>
