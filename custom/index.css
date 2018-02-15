@@ -5,10 +5,15 @@
     width: 100%;
 }
 
-
 /* main-content-area */
 #upper_main{
     background: rgba(165, 166, 167, 0)
+}
+
+/* overriding the native row bootstrap */
+
+.row{
+    margin: 0px 0px;
 }
 
 /* button-styling */
@@ -134,5 +139,25 @@
 
 .list-profile-class:hover{
     background: #000000;
+    color:white;
+}
+
+/* container in main content */
+
+#social-media-cont_1{
+    background: navy;
+}
+#social-media-cont_2{
+    background: green;
+}
+#social-media-cont_3{
+    background: orangered
+}
+#social-media-cont_4{
+    background: orchid;
+}
+
+/* social media icon color */
+.icon-color{
     color:white;
 }
