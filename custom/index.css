@@ -52,8 +52,9 @@
     background: white;
     position: absolute;
     border: 1px solid black;
-    left: 73%;
-    top: 135%;
+    transform: translate(-50%,-50%);
+    left: 80%;
+    top: 423%;
     border-radius: 5px;
     z-index: 1;
     overflow-x: hidden;
@@ -66,9 +67,10 @@
     height: 160px;
     background: white;
     position: absolute;
+    transform: translate(-50%,-50%);
     border: 1px solid black;
-    left: 85%;
-    top: 135%;
+    left: 90%;
+    top: 390%;
     border-radius: 5px;
     z-index: 1;
     overflow-x: hidden;
@@ -146,18 +148,66 @@
 
 #social-media-cont_1{
     background: navy;
+    color:white;
+    padding: 10px;
 }
 #social-media-cont_2{
     background: green;
+    color:white;
+    padding: 10px;
 }
 #social-media-cont_3{
-    background: orangered
+    background: orangered;
+    color:white;
+    padding: 10px;
 }
 #social-media-cont_4{
     background: orchid;
+    color:white;
+    padding: 10px;
 }
 
 /* social media icon color */
 .icon-color{
     color:white;
+}
+
+#image-panel{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.title{
+padding-right: 25px;
+}
+
+.table tr{
+    cursor: pointer;
+}.table tr:hover{
+    background-color: lightblue;
+}
+
+.scroll-view{
+    max-height: 277px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.add-txt{
+    margin-bottom: 10px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:799px){
+
+    .settings-container{
+        left: 70%;
+    }
+    
+    .msg-container{
+        left:50%;
+    }
+
 }

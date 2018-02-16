@@ -163,7 +163,7 @@
                 <!-- upper-title-content -->
                 <div class="row">
                     <div class="col-xs-12 panel panel-head" id="upper_main">
-                        <h2>Main Content</h1>
+                        <h2>Dashboard</h1>
                     </div>
                 </div>
 
@@ -176,39 +176,135 @@
                             <h3 class="text-center"> Welcome to your Dashboard</h3>
                         </div>
                 </div>
+
+                <!-- box containers -->
                     <div class="row" id="social-container">
-                            <div class="col-md-3 col-xs-12 panel panel-body padding-sides" id="social-media-cont_1">
+                        <div class="col-md-3 col-xs-12  panel panel-body">
+                            <div class="col-xs-12" id="social-media-cont_1">
                                 <div class="col-xs-4 icon-color">
-                                        <span class="glyphicon glyphicon-user"></span>
+                                        <i class="fa fa-comment" style="font-size:36px"></i>
                                 </div>
                                 <div class="col-xs-8">
-                                    <span>Text</span>
+                                    <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-md-offset-1 col-xs-12 panel panel-body padding-sides" id="social-media-cont_2">
+                        </div>
+
+                        <div class="col-md-3 col-xs-12  panel panel-body">
+                                <div class="col-xs-12" id="social-media-cont_2">
                                     <div class="col-xs-4 icon-color">
-                                            <span class="glyphicon glyphicon-user"></span>
+                                            <i class="fa fa-code" style="font-size:36px"></i>
                                     </div>
                                     <div class="col-xs-8">
-                                        <span>Text</span>
+                                        <span>Lorem ipsum dolor sit amet</span>
                                     </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-md-offset-1  col-xs-12 panel panel-body padding-sides" id="social-media-cont_3">
-                                    <div class="col-xs-4 icon-color">
-                                            <span class="glyphicon glyphicon-user"></span>
+                            
+                            <div class="col-md-3 col-xs-12  panel panel-body">
+                                    <div class="col-xs-12" id="social-media-cont_3">
+                                        <div class="col-xs-4 icon-color">
+                                                <i class="fa fa-bell-o" style="font-size:36px"></i>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <span>Lorem ipsum dolor sit amet</span>
+                                        </div>
                                     </div>
-                                    <div class="col-xs-8">
-                                        <span>Text</span>
+                                </div>
+                                
+                                <div class="col-md-3 col-xs-12  panel panel-body">
+                                        <div class="col-xs-12" id="social-media-cont_4">
+                                            <div class="col-xs-4 icon-color">
+                                                    <i class="fa fa-area-chart" style="font-size:36px"></i>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <span>Lorem ipsum dolor sit amet</span>
+                                            </div>
+                                        </div>
                                     </div>
-                            </div>
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-xs-12 panel panel-body">
                             <canvas id="myChart"></canvas>
                         </div>
                         <div class="col-md-4 col-xs-12 panel panel-body">
-
+                            <div class="panel-head">
+                                <img id="image-panel" src="http://via.placeholder.com/50x50" >
+                                <h2 class="title pull-right">Lorem ipsum</h2>
+                            </div>
+                            <div class="panel-body scroll-view">
+                                <table class="table table-striped">
+                                    <tbody>
+                                            <tr>
+                                              <td>John</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Mary</td>
+                                            </tr>
+                                            <tr>
+                                              <td>July</td>
+                                            </tr>
+                                            <tr>
+                                              <td>John</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Mary</td>
+                                            </tr>
+                                            <tr>
+                                              <td>July</td>
+                                            </tr>
+                                            <tr>
+                                              <td>John</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Mary</td>
+                                            </tr>
+                                            <tr>
+                                              <td>July</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                            </div>
                         </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="panel panel-body">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="panel panel-body">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 panel panel-body">
+                            <div class="col-md-4 col-xs-12 text-center">
+                                <label for="locationtxt">Your Notes</label>
+                                <input type="text" name="locationtxt" class="form-control add-txt" placeholder="Enter Your Note">
+                                <button class="btn btn-primary add-btn">Add</button>
+
+                                <p><code>*Double Click on table row to delete</code></p>
+
+                            </div>
+                            <div class="col-md-8 col-xs-12">
+                                    <table class="table table-striped add-container">
+                                            <tbody id="bodyTable">
+                                                    <tr>
+                                                      <td>John</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Mary</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>July</td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                            </div>
                     </div>
                 </div>
                         <!-- end content goes here... -->
