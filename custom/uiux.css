@@ -1,0 +1,30 @@
+
+/* setting the container to a flex container */
+.uiuxcollection{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* setting up the box container */
+
+.box{
+    margin: 12px;
+    width: 250px;
+    height:250px;
+    background: blueviolet;
+    cursor: pointer;
+}
+
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.padding-right{
+    padding-right: 15px;
+}
+
+.box p{
+    color:white;
+}

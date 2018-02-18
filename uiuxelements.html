@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Side Bar | Dashboard</title>
+
+    <!-- general css frameworks -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- general frameworks js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- plugins -->
+    <script src="plugins/Chart.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom/index.css">
+    <link rel="stylesheet" href="custom/sidebar.css">
+    <link rel="stylesheet" href="custom/uiux.css">
+
+    <!-- custom js -->
+    <script src="custom/index.js"></script>
+    <script src="custom/chartCustom.js"></script>
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- side-bar -->
+        <div class="sidebar_menu">
+            <div class="profile-display">
+                <img id="image_profile" src="http://via.placeholder.com/150x150" >
+                <div class="username"><span>Username</span></div>
+                <div class="location"><span>Beirut,LB</span></div>
+            </div>
+            <hr class="horizontal-bar">
+                <ul class="bar-nav">
+                    <li><a href="#" id="account-content"><i class="fa fa-user-circle-o icon-style"></i>Account</a>
+                        <ul class="dropdrown-nav-account">
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                            <li><a href="#">dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
+                    <li><a href="uiuxelements.html" class="active"><i class="fa fa-server icon-style"></i>UI/UX Elements</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-eye icon-style"></i>Explore</a></li>
+                    <li><a href="#"><i class="fa fa-line-chart icon-style"></i>Statistics</a></li>
+                    <li><a href="maps.html"><i class="fa fa-globe icon-style"></i>Maps</a></li>
+                    <hr class="horizontal-bar">
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+        </div>
+
+
+         <!-- top notification bar -->
+         <div class="container-fluid" id="notification-content">
+         <div class="row">
+                <div class="col-xs-2">
+                        <button class="btn-toggle" id="side_bar_toggle"><i class="fa fa-bars" style="font-size:24px"></i></button>
+                    </div>
+                <div class="col-xs-10">
+                    <span id="user-settings"><i class="fa fa-gear topnav-icon"></i>
+                    </span>
+                    <div class="show_container_settings">
+                            <ul class="list-style-standard">
+                                    <li class="list-profile-class">
+                                            <div class="row account">
+                                                <div class="col-xs-12">
+                                                        <img id="image_profile-user" src="http://via.placeholder.com/25x25" >
+                                                    Profile        
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li class="list-profile-class">
+                                            <div class="row profile">
+                                                <div class="col-xs-12">
+                                                        <i class="fa fa-user-circle-o mini-icon-style"></i>Account        
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li class="list-profile-class">
+                                            <div class="row profile">
+                                                <div class="col-xs-12">
+                                                    Log Out        
+                                                </div>
+                                            </div>
+                                    </li>
+                                </ul>
+                    </div>
+                    <span id="msg-show"><i class="fa fa-commenting-o topnav-icon"></i></span>
+                    <div class="show_container_msg">
+                        <ul class="list-style-standard">
+                                <li class="list-items-chat-color">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Steve:        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Hey,what's up for today?        
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-items-chat">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                John Smith:        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Reminder for your business meeting at 12 am        
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-items-chat-color">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Carolina        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Post the Article on next Tuesday!        
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-items-chat">
+                                        <div class="row">
+                                            <div class="col-xs-12 usernametxt">
+                                                Jonathan        
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 msgtxt">
+                                                Great! Would then like discuss more about it!        
+                                            </div>
+                                        </div>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- main-content -->
+        <div class="main_content">
+            <div class="container-fluid">
+                
+                <!-- upper-title-content -->
+                <div class="row">
+                    <div class="col-xs-12 panel panel-head" id="upper_main">
+                        <h2>UI/UX Elements</h1>
+                    </div>
+                </div>
+
+                <div class="field-container">
+                <!-- main-content-area -->
+                <div class="row">
+                        <!-- content goes here... -->
+                            <div class="uiuxcollection">
+                                    <div class="box text-center">
+                                        <div class="title">
+                                            <h3><i class="fa fa-braille padding-right" style="font-size:24px; color:white;"></i>Sortable</h3>
+                                        </div>
+                                        <hr class="horizontal-line">
+                                        <p>
+                                            Jquery UI Sortable Demonstrated
+                                        </p>
+                                    </div>
+                                    <div class="box text-center">
+                                            <div class="title">
+                                                    <h3>Collapsing Panel</h3>
+                                                </div>
+                                                <hr class="horizontal-line">
+                                                <p>
+                                                    Bootstrap with collapsing Panel Demonstrated
+                                                </p>
+                                        
+                                    </div>
+                                    <div class="box text-center">
+                                            <div class="title">
+                                                    <h3><i class="fa fa-line-chart padding-right" style="font-size:24px; color:white;"></i>Charts</h3>
+                                                </div>
+                                                <hr class="horizontal-line">
+                                                <p>
+                                                    Chart.JS Demonstration
+                                                </p>
+                                        
+                                    </div>
+                                    <div class="box text-center">
+                                            <div class="title">
+                                                    <h3><i class="fa fa-map-o padding-right" style="font-size:24px; color:white;"></i>Google Maps</h3>
+                                                </div>
+                                                <hr class="horizontal-line">
+                                                <p>
+                                                    Google Maps Demonstration
+                                                </p>
+                                        
+                                    </div>
+                            </div>
+                        <!-- end content goes here... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
