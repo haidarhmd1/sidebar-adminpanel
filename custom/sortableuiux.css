@@ -1,3 +1,7 @@
 .pointer li{
     cursor: pointer;
 }
+
+.light-blue{
+    background:#cad5f1;
+}
