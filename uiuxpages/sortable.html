@@ -7,27 +7,26 @@
     <title>Admin Side Bar | Dashboard</title>
 
     <!-- general css frameworks -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- general frameworks js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="../js/jquery-2.2.3.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- plugins -->
-    <script src="plugins/Chart.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="custom/index.css">
-    <link rel="stylesheet" href="custom/sidebar.css">
-    <link rel="stylesheet" href="custom/uiux.css">
+    <link rel="stylesheet" href="../custom/index.css">
+    <link rel="stylesheet" href="../custom/sidebar.css">
+    <link rel="stylesheet" href="../custom/uiux.css">
 
     <!-- custom js -->
-    <script src="custom/index.js"></script>
-    <script src="custom/chartCustom.js"></script>
+    <script src="../custom/index.js"></script>
 
+    <!-- documentation js and css -->
+    <link rel="stylesheet" href="../custom/sortableuiux.css">
+    <script src="../custom/sortableuiux.js"></script>
 
 </head>
 <body>
@@ -49,12 +48,12 @@
                             <li><a href="#">dropdown</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
-                    <li><a href="uiuxelements.html" class="active"><i class="fa fa-server icon-style"></i>UI/UX Elements</a>
+                    <li><a href="../index.html"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
+                    <li><a href="../uiuxelements.html" class="active"><i class="fa fa-server icon-style"></i>UI/UX Elements</a>
                     </li>
                     <li><a href="#"><i class="fa fa-eye icon-style"></i>Explore</a></li>
                     <li><a href="#"><i class="fa fa-line-chart icon-style"></i>Statistics</a></li>
-                    <li><a href="maps.html"><i class="fa fa-globe icon-style"></i>Maps</a></li>
+                    <li><a href="../maps.html"><i class="fa fa-globe icon-style"></i>Maps</a></li>
                     <hr class="horizontal-bar">
                     <li><a href="#">Log Out</a></li>
                 </ul>
@@ -160,7 +159,7 @@
                 <!-- upper-title-content -->
                 <div class="row">
                     <div class="col-xs-12 panel panel-head" id="upper_main">
-                        <h2>UI/UX Elements</h1>
+                        <h2>UI/UX Sortable</h1>
                     </div>
                 </div>
 
@@ -168,47 +167,56 @@
                 <!-- main-content-area -->
                 <div class="row">
                         <!-- content goes here... -->
-                            <div class="uiuxcollection">
-                                    <div class="box text-center" id="sortable-page">
-                                        <div class="title">
-                                            <h3><i class="fa fa-braille padding-right" style="font-size:24px; color:white;"></i>Sortable</h3>
+                    <div class="col-xs-12 panel panel-head">
+                        <h3>jQuery Sortable</h3><br>
+                        <p>A documentation about jQuery UI Framework on how to use Sortable inside a table or list</p><br>
+                        <p>Include <code>https://code.jquery.com/ui/1.12.1/jquery-ui.js</code> into your header, afterwards, initialize the parent container with the desired id or class name of yours, for example: <code>id="sortable"</code>, and include <code>ui-state-default</code> to the elements you wish to be sorted</p><br>
+                        <p>Include <code>$("desired ID or Class").sortable();</code> inside your Javascript file, to initialize the Sortable Effect</p>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                            <div class="col-md-6">
+                                    <div class="panel panel-head">
+                                        <h5>List Items</h5>
+                                    </div>
+                                    <div class="panel panel-body">
+                                        <ul id="sortable" class="pointer">
+                                                <li class="ui-state-default">John</li>
+                                                <li class="ui-state-default">Johnathan</li>
+                                                <li class="ui-state-default">Marry</li>
+                                                <li class="ui-state-default">Peter</li>
+                                                <li class="ui-state-default">Smith</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                        <div class="panel panel-head">
+                                            <h5>List Items</h5>
                                         </div>
-                                        <hr class="horizontal-line">
-                                        <p>
-                                            Jquery UI Sortable Demonstrated
-                                        </p>
+                                        <div class="panel panel-body">
+                                                <table class="table table-striped">
+                                                        <tbody id="sortableTable">
+                                                                <tr class="ui-state-default">
+                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Jimmy</span></td>
+                                                                </tr>
+                                                                <tr class="ui-state-default">
+                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Mary</span></td>
+                                                                </tr>
+                                                                <tr class="ui-state-default">
+                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">July</span></td>
+                                                                </tr>
+                                                                <tr class="ui-state-default">
+                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">John</span></td>
+                                                                </tr>
+                                                                <tr class="ui-state-default">
+                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Mary</span></td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="box text-center" id="collapse-page">
-                                            <div class="title">
-                                                    <h3>Collapsing Panel</h3>
-                                                </div>
-                                                <hr class="horizontal-line">
-                                                <p>
-                                                    Bootstrap with collapsing Panel Demonstrated
-                                                </p>
-                                        
-                                    </div>
-                                    <div class="box text-center" id="chart-page">
-                                            <div class="title">
-                                                    <h3><i class="fa fa-line-chart padding-right" style="font-size:24px; color:white;"></i>Charts</h3>
-                                                </div>
-                                                <hr class="horizontal-line">
-                                                <p>
-                                                    Chart.JS Demonstration
-                                                </p>
-                                        
-                                    </div>
-                                    <div class="box text-center" id="googlemaps-page">
-                                            <div class="title">
-                                                    <h3><i class="fa fa-map-o padding-right" style="font-size:24px; color:white;"></i>Google Maps</h3>
-                                                </div>
-                                                <hr class="horizontal-line">
-                                                <p>
-                                                    Google Maps Demonstration
-                                                </p>
-                                        
-                                    </div>
-                            </div>
+                    </div>
                         <!-- end content goes here... -->
                     </div>
                 </div>

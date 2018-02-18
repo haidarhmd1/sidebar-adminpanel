@@ -26,12 +26,19 @@ $(document).ready(function(){
             $(this).remove();
         });
         
-
+        // page redirection for ui/ux elements page
+        pageredirect("#sortable-page", "uiuxpages/sortable.html");
 
 });
 
 function toggleItems(clickItem,firstObject, secondObject){
     $(clickItem).click(function(e){
         $(firstObject).toggleClass(secondObject);
+    });
+}
+
+function pageredirect (boxid, pagehref){
+    $(boxid).click(function(e){
+        window.location.href = pagehref;
     });
 }
