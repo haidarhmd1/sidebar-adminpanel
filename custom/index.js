@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+	$("#sortable").sortable();
         toggleItems("#side_bar_toggle",".sidebar_menu","main-screen-full"); //SideBar Menu
         toggleItems("#side_bar_toggle",".main_content , #notification-content","content_side_padding"); //SideBar Menu
         toggleItems("#show-content",".dropdrown-nav","show-hidden-menu"); //DropDown Menu

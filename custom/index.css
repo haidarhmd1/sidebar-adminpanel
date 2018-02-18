@@ -197,6 +197,9 @@ padding-right: 25px;
     margin-bottom: 10px;
 }
 
+.padding-text-sides{
+    padding-left: 10px;
+}
 
 /* media queries */
 
