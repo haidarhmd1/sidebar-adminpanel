@@ -8,22 +8,26 @@
     <title>Admin Side Bar | Dashboard</title>
 
     <!-- general css frameworks -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- general frameworks js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="custom/index.css">
-    <link rel="stylesheet" href="custom/sidebar.css">
-    <link rel="stylesheet" href="custom/maps.css">
+    <link rel="stylesheet" href="../custom/index.css">
+    <link rel="stylesheet" href="../custom/sidebar.css">
+    <link rel="stylesheet" href="../custom/uiux.css">
 
     <!-- custom js -->
-    <script src="custom/index.js"></script>
-    <script src="custom/maps.js"></script>
+    <script src="../custom/index.js"></script>
+
+    <!-- documentation js and css -->
+    <link rel="stylesheet" href="../custom/sortableuiux.css">
+    <script src="../custom/sortableuiux.js"></script>
 
 </head>
 
@@ -59,23 +63,27 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="../index.html">
                         <i class="fa fa-eye icon-style"></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="uiuxelements.html">
+                    <a href="../uiuxelements.html" class="active">
                         <i class="fa fa-server icon-style"></i>UI/UX Elements</a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-eye icon-style"></i>Explore <strong>(still in progress)</strong></a>
+                        <i class="fa fa-eye icon-style"></i>Explore
+                        <strong>(still in progress)</strong>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-line-chart icon-style"></i>Statistics<strong>(still in progress)</strong></a>
+                        <i class="fa fa-line-chart icon-style"></i>Statistics
+                        <strong>(still in progress)</strong>
+                    </a>
                 </li>
                 <li>
-                    <a href="maps.html" class="active">
+                    <a href="../maps.html">
                         <i class="fa fa-globe icon-style"></i>Maps</a>
                 </li>
                 <hr class="horizontal-bar">
@@ -84,6 +92,7 @@
                 </li>
             </ul>
         </div>
+
 
         <!-- top notification bar -->
         <div class="container-fluid" id="notification-content">
@@ -184,95 +193,92 @@
         <!-- main-content -->
         <div class="main_content">
             <div class="container-fluid">
-
-                <!-- upper-title-content -->
                 <div class="row">
-                    <div class="col-xs-12 panel panel-head" id="upper_main">
-                        <h2>Google Maps</h1>
-                    </div>
-                </div>
-                <!-- main-content-area -->
-                <div class="row">
-                    <div class="col-xs-2 panel panel-default no-padding">
-                        <div class="panel-body">
-                            <div id="findhotels">
-                                Find hotels in:
-                            </div>
-
-                            <div id="locationField">
-                                <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
-                            </div>
-
-                            <div id="controls">
-                                <select id="country" class="form-control">
-                                    <option value="all">All</option>
-                                    <option value="au">Australia</option>
-                                    <option value="br">Brazil</option>
-                                    <option value="ca">Canada</option>
-                                    <option value="fr">France</option>
-                                    <option value="de">Germany</option>
-                                    <option value="mx">Mexico</option>
-                                    <option value="nz">New Zealand</option>
-                                    <option value="it">Italy</option>
-                                    <option value="za">South Africa</option>
-                                    <option value="es">Spain</option>
-                                    <option value="pt">Portugal</option>
-                                    <option value="us" selected>U.S.A.</option>
-                                    <option value="uk">United Kingdom</option>
-                                </select>
-                            </div>
+                    <!-- upper-title-content -->
+                    <div class="row">
+                        <div class="col-xs-12 panel panel-head" id="upper_main">
+                            <h2>UI/UX Sortable</h1>
                         </div>
-                    </div>
 
-                    <div class="col-xs-6">
-                        <!-- content goes here... -->
+                        <div class="field-container">
+                            <!-- main-content-area -->
+                            <div class="row">
+                                <!-- content goes here... -->
+                                <div class="col-xs-12 panel panel-head">
+                                    <h3>Google Maps API</h3>
+                                    <br>
+                                    <p>A documentation about Google Maps API</p>
+                                    <br>
+                                    <p>Include
+                                        <code>src="https://maps.googleapis.com/maps/api/js?callback=myMap"</code> into your script tag</p>
+                                </div>
+                            </div>
 
-                        <div id="map"></div>
+                            <div class="row">
+                                <div class="col-xs-12">
 
-                        <!-- end content goes here... -->
-                    </div>
-                    <div class="col-xs-4 panel panel-default">
-                        <div class="panel-body">
-                            <div id="listing">
-                                <table id="resultsTable">
-                                    <tbody id="results"></tbody>
-                                </table>
-                                <div style="display: none">
-                                    <div id="info-content">
-                                        <table>
-                                            <tr id="iw-url-row" class="iw_table_row">
-                                                <td id="iw-icon" class="iw_table_icon"></td>
-                                                <td id="iw-url"></td>
-                                            </tr>
-                                            <tr id="iw-address-row" class="iw_table_row">
-                                                <td class="iw_attribute_name">Address:</td>
-                                                <td id="iw-address"></td>
-                                            </tr>
-                                            <tr id="iw-phone-row" class="iw_table_row">
-                                                <td class="iw_attribute_name">Telephone:</td>
-                                                <td id="iw-phone"></td>
-                                            </tr>
-                                            <tr id="iw-rating-row" class="iw_table_row">
-                                                <td class="iw_attribute_name">Rating:</td>
-                                                <td id="iw-rating"></td>
-                                            </tr>
-                                            <tr id="iw-website-row" class="iw_table_row">
-                                                <td class="iw_attribute_name">Website:</td>
-                                                <td id="iw-website"></td>
-                                            </tr>
-                                        </table>
+
+                                    <div id="map" style="width:400px;height:400px"></div>
+
+                                    <script>
+                                        function myMap() {
+                                            var mapOptions = {
+                                                center: new google.maps.LatLng(51.5, -0.12),
+                                                zoom: 10,
+                                                mapTypeId: google.maps.MapTypeId.HYBRID
+                                            }
+                                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                                        }
+                                    </script>
+
+                                    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- codesnippet Container -->
+                                <div class="col-xs-12" style="padding-top:15px;">
+                                    <div class="panel panel-head">
+                                        <a data-toggle="collapse" href="#collapse1">View Source</a>
+                                    </div>
+                                    <div id="collapse1" class="panel-body panel-collapse collapse in light-blue" style="margin-bottom:15px;">
+                                        <code>
+
+                                                <span>
+
+                                                    &lt;div id="map" style="width:400px;height:400px"&gt;&lt;/div&gt; <br>
+                                                    <br>
+                                                    &lt;script&gt; <br>
+                                                        function myMap() { <br>
+                                                            var mapOptions = { <br>
+                                                                center: new google.maps.LatLng(51.5, -0.12), <br>
+                                                                zoom: 10, <br>
+                                                                mapTypeId: google.maps.MapTypeId.HYBRID <br>
+                                                            } <br>
+                                                            var map = new google.maps.Map(document.getElementById("map"), mapOptions); <br>
+                                                        } <br>
+                                                        &lt;/script&gt; <br>
+                                                        <br>
+                                                        &lt;script src="https://maps.googleapis.com/maps/api/js?callback=myMap&lt;/script&gt;
+                
+                                            
+                                                <br>
+                                            </span>
+                                            
+                                        </code>
+                                        <br>
+                                        <br>
                                     </div>
                                 </div>
                             </div>
+                            <!-- end content goes here... -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBoHQ3wSPjV7rM6o0tCwOzIc90rfvWrVY&libraries=places&callback=initMap"
-        async defer></script>
+    </div>
 </body>
 
 </html>

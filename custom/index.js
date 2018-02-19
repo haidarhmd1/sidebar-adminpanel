@@ -28,6 +28,9 @@ $(document).ready(function(){
         
         // page redirection for ui/ux elements page
         pageredirect("#sortable-page", "uiuxpages/sortable.html");
+        pageredirect("#collapse-page", "uiuxpages/collapsepanel.html");
+        pageredirect("#chart-page", "http://www.chartjs.org/docs/latest/charts/");
+        pageredirect("#googlemaps-page", "uiuxpages/googlemapsdemo.html" );
 
 });
 

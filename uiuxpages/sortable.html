@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
 
     <!-- general frameworks js -->
     <script src="../js/jquery-2.2.3.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
     <!-- custom css -->
@@ -29,133 +30,166 @@
     <script src="../custom/sortableuiux.js"></script>
 
 </head>
+
 <body>
 
     <div class="wrapper">
         <!-- side-bar -->
         <div class="sidebar_menu">
             <div class="profile-display">
-                <img id="image_profile" src="http://via.placeholder.com/150x150" >
-                <div class="username"><span>Username</span></div>
-                <div class="location"><span>Beirut,LB</span></div>
+                <img id="image_profile" src="http://via.placeholder.com/150x150">
+                <div class="username">
+                    <span>Username</span>
+                </div>
+                <div class="location">
+                    <span>Beirut,LB</span>
+                </div>
             </div>
             <hr class="horizontal-bar">
-                <ul class="bar-nav">
-                    <li><a href="#" id="account-content"><i class="fa fa-user-circle-o icon-style"></i>Account</a>
-                        <ul class="dropdrown-nav-account">
-                            <li><a href="#">dropdown</a></li>
-                            <li><a href="#">dropdown</a></li>
-                            <li><a href="#">dropdown</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../index.html"><i class="fa fa-eye icon-style"></i>Dashboard</a></li>
-                    <li><a href="../uiuxelements.html" class="active"><i class="fa fa-server icon-style"></i>UI/UX Elements</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-eye icon-style"></i>Explore</a></li>
-                    <li><a href="#"><i class="fa fa-line-chart icon-style"></i>Statistics</a></li>
-                    <li><a href="../maps.html"><i class="fa fa-globe icon-style"></i>Maps</a></li>
-                    <hr class="horizontal-bar">
-                    <li><a href="#">Log Out</a></li>
-                </ul>
+            <ul class="bar-nav">
+                <li>
+                    <a href="#" id="account-content">
+                        <i class="fa fa-user-circle-o icon-style"></i>Account</a>
+                    <ul class="dropdrown-nav-account">
+                        <li>
+                            <a href="#">dropdown</a>
+                        </li>
+                        <li>
+                            <a href="#">dropdown</a>
+                        </li>
+                        <li>
+                            <a href="#">dropdown</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa fa-eye icon-style"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="../uiuxelements.html" class="active">
+                        <i class="fa fa-server icon-style"></i>UI/UX Elements</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-eye icon-style"></i>Explore</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-line-chart icon-style"></i>Statistics</a>
+                </li>
+                <li>
+                    <a href="../maps.html">
+                        <i class="fa fa-globe icon-style"></i>Maps</a>
+                </li>
+                <hr class="horizontal-bar">
+                <li>
+                    <a href="#">Log Out</a>
+                </li>
+            </ul>
         </div>
 
 
-         <!-- top notification bar -->
-         <div class="container-fluid" id="notification-content">
-         <div class="row">
+        <!-- top notification bar -->
+        <div class="container-fluid" id="notification-content">
+            <div class="row">
                 <div class="col-xs-2">
-                        <button class="btn-toggle" id="side_bar_toggle"><i class="fa fa-bars" style="font-size:24px"></i></button>
-                    </div>
+                    <button class="btn-toggle" id="side_bar_toggle">
+                        <i class="fa fa-bars" style="font-size:24px"></i>
+                    </button>
+                </div>
                 <div class="col-xs-10">
-                    <span id="user-settings"><i class="fa fa-gear topnav-icon"></i>
+                    <span id="user-settings">
+                        <i class="fa fa-gear topnav-icon"></i>
                     </span>
                     <div class="show_container_settings">
-                            <ul class="list-style-standard">
-                                    <li class="list-profile-class">
-                                            <div class="row account">
-                                                <div class="col-xs-12">
-                                                        <img id="image_profile-user" src="http://via.placeholder.com/25x25" >
-                                                    Profile        
-                                                </div>
-                                            </div>
-                                    </li>
-                                    <li class="list-profile-class">
-                                            <div class="row profile">
-                                                <div class="col-xs-12">
-                                                        <i class="fa fa-user-circle-o mini-icon-style"></i>Account        
-                                                </div>
-                                            </div>
-                                    </li>
-                                    <li class="list-profile-class">
-                                            <div class="row profile">
-                                                <div class="col-xs-12">
-                                                    Log Out        
-                                                </div>
-                                            </div>
-                                    </li>
-                                </ul>
+                        <ul class="list-style-standard">
+                            <li class="list-profile-class">
+                                <div class="row account">
+                                    <div class="col-xs-12">
+                                        <img id="image_profile-user" src="http://via.placeholder.com/25x25"> Profile
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-profile-class">
+                                <div class="row profile">
+                                    <div class="col-xs-12">
+                                        <i class="fa fa-user-circle-o mini-icon-style"></i>Account
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-profile-class">
+                                <div class="row profile">
+                                    <div class="col-xs-12">
+                                        Log Out
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <span id="msg-show"><i class="fa fa-commenting-o topnav-icon"></i></span>
+                    <span id="msg-show">
+                        <i class="fa fa-commenting-o topnav-icon"></i>
+                    </span>
                     <div class="show_container_msg">
                         <ul class="list-style-standard">
-                                <li class="list-items-chat-color">
-                                        <div class="row">
-                                            <div class="col-xs-12 usernametxt">
-                                                Steve:        
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 msgtxt">
-                                                Hey,what's up for today?        
-                                            </div>
-                                        </div>
-                                </li>
-                                <li class="list-items-chat">
-                                        <div class="row">
-                                            <div class="col-xs-12 usernametxt">
-                                                John Smith:        
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 msgtxt">
-                                                Reminder for your business meeting at 12 am        
-                                            </div>
-                                        </div>
-                                </li>
-                                <li class="list-items-chat-color">
-                                        <div class="row">
-                                            <div class="col-xs-12 usernametxt">
-                                                Carolina        
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 msgtxt">
-                                                Post the Article on next Tuesday!        
-                                            </div>
-                                        </div>
-                                </li>
-                                <li class="list-items-chat">
-                                        <div class="row">
-                                            <div class="col-xs-12 usernametxt">
-                                                Jonathan        
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 msgtxt">
-                                                Great! Would then like discuss more about it!        
-                                            </div>
-                                        </div>
-                                </li>
+                            <li class="list-items-chat-color">
+                                <div class="row">
+                                    <div class="col-xs-12 usernametxt">
+                                        Steve:
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 msgtxt">
+                                        Hey,what's up for today?
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-items-chat">
+                                <div class="row">
+                                    <div class="col-xs-12 usernametxt">
+                                        John Smith:
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 msgtxt">
+                                        Reminder for your business meeting at 12 am
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-items-chat-color">
+                                <div class="row">
+                                    <div class="col-xs-12 usernametxt">
+                                        Carolina
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 msgtxt">
+                                        Post the Article on next Tuesday!
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-items-chat">
+                                <div class="row">
+                                    <div class="col-xs-12 usernametxt">
+                                        Jonathan
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 msgtxt">
+                                        Great! Would then like discuss more about it!
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- main-content -->
         <div class="main_content">
             <div class="container-fluid">
-                
+
                 <!-- upper-title-content -->
                 <div class="row">
                     <div class="col-xs-12 panel panel-head" id="upper_main">
@@ -164,38 +198,46 @@
                 </div>
 
                 <div class="field-container">
-                <!-- main-content-area -->
-                <div class="row">
+                    <!-- main-content-area -->
+                    <div class="row">
                         <!-- content goes here... -->
-                    <div class="col-xs-12 panel panel-head">
-                        <h3>jQuery Sortable</h3><br>
-                        <p>A documentation about jQuery UI Framework on how to use Sortable inside a table or list</p><br>
-                        <p>Include <code>https://code.jquery.com/ui/1.12.1/jquery-ui.js</code> into your header, afterwards, initialize the parent container with the desired id or class name of yours, for example: <code>id="sortable"</code>, and include <code>ui-state-default</code> to the elements you wish to be sorted</p><br>
-                        <p>Include <code>$("desired ID or Class").sortable();</code> inside your Javascript file, to initialize the Sortable Effect</p>
+                        <div class="col-xs-12 panel panel-head">
+                            <h3>jQuery Sortable</h3>
+                            <br>
+                            <p>A documentation about jQuery UI Framework on how to use Sortable inside a table or list</p>
+                            <br>
+                            <p>Include
+                                <code>https://code.jquery.com/ui/1.12.1/jquery-ui.js</code> into your header, afterwards, initialize the parent container with the desired id or class
+                                name of yours, for example:
+                                <code>id="sortable"</code>, and include
+                                <code>ui-state-default</code> to the elements you wish to be sorted</p>
+                            <br>
+                            <p>Include
+                                <code>$("desired ID or Class").sortable();</code> inside your Javascript file, to initialize the Sortable Effect</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                            <div class="col-xs-12">
-                                    <div class="panel panel-head">
-                                        <h5>List Items</h5>
-                                    </div>
-                                    <div class="panel panel-body">
-                                        <ul id="sortable" class="pointer">
-                                                <li class="ui-state-default">John</li>
-                                                <li class="ui-state-default">Johnathan</li>
-                                                <li class="ui-state-default">Marry</li>
-                                                <li class="ui-state-default">Peter</li>
-                                                <li class="ui-state-default">Smith</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="panel panel-head">
-                                           <a data-toggle="collapse" href="#collapse1">View Source</a>
-                                    </div>
-                                    <div id="collapse1" class="panel-body panel-collapse collapse in light-blue">
-                                        <code>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel panel-head">
+                                <h5>List Items</h5>
+                            </div>
+                            <div class="panel panel-body">
+                                <ul id="sortable" class="pointer">
+                                    <li class="ui-state-default">John</li>
+                                    <li class="ui-state-default">Johnathan</li>
+                                    <li class="ui-state-default">Marry</li>
+                                    <li class="ui-state-default">Peter</li>
+                                    <li class="ui-state-default">Smith</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel panel-head">
+                                <a data-toggle="collapse" href="#collapse1">View Source</a>
+                            </div>
+                            <div id="collapse1" class="panel-body panel-collapse collapse in light-blue">
+                                <code>
 
                                                 <span>&lt;ul id="sortable" class="pointer"&gt;<br>
                                                 &lt;li class="ui-state-default"&gt;John&lt;/li&gt;<br>
@@ -218,43 +260,58 @@
                                 </div>
 
                                         </code>
-                                    </div>
-                                </div>
-                </div>          
-                <div class="row">  
-                                <div class="col-xs-12">
-                                        <div class="panel panel-head">
-                                            <h5>List Items</h5>
-                                        </div>
-                                        <div class="panel panel-body">
-                                                <table class="table table-striped">
-                                                        <tbody id="sortableTable">
-                                                                <tr class="ui-state-default">
-                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Jimmy</span></td>
-                                                                </tr>
-                                                                <tr class="ui-state-default">
-                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Mary</span></td>
-                                                                </tr>
-                                                                <tr class="ui-state-default">
-                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">July</span></td>
-                                                                </tr>
-                                                                <tr class="ui-state-default">
-                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">John</span></td>
-                                                                </tr>
-                                                                <tr class="ui-state-default">
-                                                                  <td><i class="fa fa-ellipsis-v"></i><span class="padding-text-sides">Mary</span></td>
-                                                                </tr>
-                                                              </tbody>
-                                                            </table>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-xs-12">
-                                            <div class="panel panel-head">
-                                                   <a data-toggle="collapse" href="#collapse2">View Source</a>
-                                            </div>
-                                            <div id="collapse2" class="panel-body panel-collapse collapse in scroll-view light-blue">
-                                                <code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel panel-head">
+                                <h5>List Items</h5>
+                            </div>
+                            <div class="panel panel-body">
+                                <table class="table table-striped">
+                                    <tbody id="sortableTable">
+                                        <tr class="ui-state-default">
+                                            <td>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                                <span class="padding-text-sides">Jimmy</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="ui-state-default">
+                                            <td>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                                <span class="padding-text-sides">Mary</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="ui-state-default">
+                                            <td>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                                <span class="padding-text-sides">July</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="ui-state-default">
+                                            <td>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                                <span class="padding-text-sides">John</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="ui-state-default">
+                                            <td>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                                <span class="padding-text-sides">Mary</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="panel panel-head">
+                                <a data-toggle="collapse" href="#collapse2">View Source</a>
+                            </div>
+                            <div id="collapse2" class="panel-body panel-collapse collapse in scroll-view light-blue">
+                                <code>
         
                                                         <span>
                                                             &lt;ul id="sortable" class="pointer"&gt;<br>
